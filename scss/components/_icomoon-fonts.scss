@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot');
+  src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-beaker:before {
+	content: "\e600";
+}
+.icon-linux:before {
+	content: "\e601";
+}
+.icon-reorder:before {
+	content: "\e602";
+}
+.icon-home:before {
+	content: "\e603";
+}
+.icon-user:before {
+	content: "\e604";
+}
+.icon-th:before {
+	content: "\e605";
+}
+.icon-heart:before {
+	content: "\e606";
+}
+.icon-wrench:before {
+	content: "\e607";
+}
+.icon-rupee:before {
+	content: "\e608";
+}
+.icon-dollar:before {
+	content: "\e609";
+}
+.icon-sun:before {
+	content: "\e60a";
+}
+.icon-moon:before {
+	content: "\e60b";
+}
+.icon-align-justify:before {
+	content: "\e60c";
+}
+.icon-pencil:before {
+	content: "\e615";
+}
+.icon-briefcase:before {
+	content: "\e616";
+}
+.icon-building:before {
+	content: "\e617";
+}
+.icon-desktop:before {
+	content: "\e618";
+}
+.icon-laptop:before {
+	content: "\e619";
+}
+.icon-tablet:before {
+	content: "\e61a";
+}
+.icon-mobile:before {
+	content: "\e61b";
+}
+.icon-quote-left:before {
+	content: "\e61c";
+}
+.icon-quote-right:before {
+	content: "\e61d";
+}
+.icon-suitcase:before {
+	content: "\e61e";
+}
+.icon-arrow-down:before {
+	content: "\e61f";
+}
+.icon-arrow-left:before {
+	content: "\e620";
+}
+.icon-arrow-right:before {
+	content: "\e621";
+}
+.icon-arrow-up:before {
+	content: "\e622";
+}
+.icon-github:before {
+	content: "\e60d";
+}
+.icon-linkedin:before {
+	content: "\e60e";
+}
+.icon-twitter:before {
+	content: "\e60f";
+}
+.icon-googleplus:before {
+	content: "\e610";
+}
+.icon-twitter2:before {
+	content: "\e611";
+}
+.icon-github2:before {
+	content: "\e612";
+}
+.icon-linkedin2:before {
+	content: "\e613";
+}
+.icon-googleplus2:before {
+	content: "\e614";
+}
