@@ -348,57 +348,57 @@ table {
 .logo .logo__link {
   display: inline-block;
   padding: 10px;
-  border-radius: 50%;
   border: 3px solid #cccccc;
+  border-radius: 50%;
   color: black;
   text-decoration: none;
   font-size: 1.5em;
 }
 .logo .logo__link:hover, .logo .logo__link:focus {
-  transition: .3s;
   border-color: indianred;
+  transition: .3s;
 }
 .logo .logo__link .logo__text {
-  display: block;
   position: relative;
+  display: block;
   transition: all .2s;
   transform-style: preserve-3d;
 }
 .logo .logo__link .logo__text::after {
-  content: "\e602";
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  transform-origin: 0% 0%;
+  content: "\e602";
   transform: rotateX(-90deg);
+  transform-origin: 0% 0%;
 }
 .logo .logo__link .logo__text.active::after {
   content: "\e61f";
 }
 .logo .logo__link:hover .logo__text, .logo .logo__link:focus .logo__text {
-  transform-origin: 50% 0%;
   transform: rotateX(90deg) translateY(-100%);
+  transform-origin: 50% 0%;
 }
 
 /* Navigation menu */
 .menu {
   position: relative;
   display: block;
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .menu .menu__item {
   padding: 5px 10px;
   text-align: left;
 }
 .menu .menu__links {
-  text-decoration: none;
-  color: indianred;
   padding: 1px 0;
+  color: indianred;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -407,34 +407,34 @@ table {
   text-align: center;
 }
 .navigation--main .menu {
-  display: inline-block;
-  transition: .3s;
-  opacity: 0;
   top: -50px;
   z-index: -999;
+  display: inline-block;
+  opacity: 0;
+  transition: .3s;
 }
 .navigation--main .menu.is_exp {
-  opacity: 1;
   top: 0;
   z-index: 9;
   background: white;
+  opacity: 1;
 }
 .navigation--main .menu__item {
   display: list-item;
 }
-.navigation--main .menu__item:hover {
+.navigation--main .menu__item:hover, .navigation--main .menu__item:focus {
   background: indianred;
 }
-.navigation--main .menu__item:hover .menu__links {
+.navigation--main .menu__item:hover .menu__links, .navigation--main .menu__item:focus .menu__links {
   color: white;
 }
 .navigation--main .menu__links {
-  transition: .2s;
   margin-left: -5px;
+  transition: .2s;
 }
 .navigation--main .menu__links:hover, .navigation--main .menu__links:focus {
-  color: white;
   background: indianred;
+  color: white;
 }
 
 .navigation--social {
@@ -447,35 +447,35 @@ table {
   height: 22px;
 }
 .navigation--social .menu__item {
+  position: relative;
   display: inline-block;
   font-size: 1.5em;
-  position: relative;
 }
-.navigation--social .menu__links:hover {
+.navigation--social .menu__links:hover, .navigation--social .menu__links:focus {
   color: black;
 }
 .navigation--social .menu--child {
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  z-index: -999;
   width: 400px;
+  font-size: .3em;
   opacity: 0;
   transition: .4s;
-  font-size: .3em;
-  position: absolute;
-  left: -100%;
-  bottom: 0;
-  z-index: -999;
 }
 .navigation--social .menu--child.is_exp {
-  opacity: 1;
   left: 105%;
   z-index: 1;
+  opacity: 1;
 }
 .navigation--social .is_exp .menu--child__item {
   padding: 3px;
 }
-.navigation--social .is_exp .menu--child__item:hover {
+.navigation--social .is_exp .menu--child__item:hover, .navigation--social .is_exp .menu--child__item:focus {
   background: indianred;
 }
-.navigation--social .is_exp .menu--child__item:hover .menu__links {
+.navigation--social .is_exp .menu--child__item:hover .menu__links, .navigation--social .is_exp .menu--child__item:focus .menu__links {
   color: white;
 }
 
@@ -492,15 +492,15 @@ table {
     content: "\e61f";
   }
   .navigation--social .menu--child {
-    width: auto;
-    left: 0;
-    bottom: auto;
     top: -100%;
+    bottom: auto;
+    left: 0;
+    width: auto;
   }
   .navigation--social .menu--child.is_exp {
     top: 105%;
-    left: 0;
     bottom: auto;
+    left: 0;
   }
 }
 html, body {
@@ -513,17 +513,17 @@ a, a:hover, a:focus {
 }
 
 .page {
+  position: relative;
+  margin: 0 auto;
   max-width: 600px;
   height: 100%;
-  margin: 0 auto;
-  position: relative;
 }
 
 .mailme, .mailme:hover, .mailme:focus {
+  padding: 0 3px 1px;
+  background: teal;
   color: white;
   text-decoration: none;
-  background: teal;
-  padding: 0 3px 1px;
 }
 
 @media (max-width: 660px) {

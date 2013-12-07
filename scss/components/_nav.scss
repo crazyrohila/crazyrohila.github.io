@@ -3,18 +3,18 @@
 .menu {
   position: relative;
   display: block;
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style: none;
   .menu__item {
     @extend .icon;
     padding: 5px 10px;
     text-align: left;
   }
   .menu__links {
-    text-decoration: none;
-    color: $base-color;
     padding: 1px 0;
+    color: $base-color;
+    text-decoration: none;
     cursor: pointer;
   }
 }
@@ -24,21 +24,21 @@
   margin-top: 10px;
   text-align: center;
   .menu {
-    display: inline-block;
-    transition: .3s;
-    opacity: 0;
     top: -50px;
     z-index: -999;
+    display: inline-block;
+    opacity: 0;
+    transition: .3s;
     &.is_exp {
-      opacity: 1;
       top: 0;
       z-index: 9;
       background: $white;
+      opacity: 1;
     }
   }
   .menu__item {
     display: list-item;
-    &:hover {
+    &:hover, &:focus {
       background: $base-color;
       .menu__links {
         color: $white;
@@ -61,11 +61,11 @@
     }
   }
   .menu__links {
-    transition: .2s;
     margin-left: -5px;
+    transition: .2s;
     &:hover, &:focus {
-      color: $white;
       background: $base-color;
+      color: $white;
     }
   }
 }
@@ -83,12 +83,12 @@
     }
   }
   .menu__item {
+    position: relative;
     display: inline-block;
     font-size: 1.5em;
-    position: relative;
   }
   .menu__links {
-    &:hover {
+    &:hover, &:focus {
       color: $black;
     }
     &.github {
@@ -111,24 +111,24 @@
     }
   }
   .menu--child {
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    z-index: -999;
     width: 400px;
+    font-size: .3em;
     opacity: 0;
     transition: .4s;
-    font-size: .3em;
-    position: absolute;
-    left: -100%;
-    bottom: 0;
-    z-index: -999;
     &.is_exp {
-      opacity: 1;
       left: 105%;
       z-index: 1;
+      opacity: 1;
     }
   }
   .is_exp {
     .menu--child__item {
       padding: 3px;
-      &:hover {
+      &:hover, &:focus {
         background: $base-color;
         .menu__links {
           color: $white;
@@ -166,14 +166,14 @@
       }
     }
     .menu--child {
-      width: auto;
-      left: 0;
-      bottom: auto;
       top: -100%;
+      bottom: auto;
+      left: 0;
+      width: auto;
       &.is_exp {
         top: 105%;
-        left: 0;
         bottom: auto;
+        left: 0;
       }
     }
   }

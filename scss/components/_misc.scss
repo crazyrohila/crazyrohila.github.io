@@ -8,17 +8,17 @@ a, a:hover, a:focus {
 }
 
 .page {
+  position: relative;
+  margin: 0 auto;
   max-width: 600px;
   height: 100%;
-  margin: 0 auto;
-  position: relative;
 }
 
 .mailme, .mailme:hover, .mailme:focus {
+  padding: 0 3px 1px;
+  background: $fav;
   color: $white;
   text-decoration: none;
-  background: $fav;
-  padding: 0 3px 1px;
 }
 
 @media (max-width: 660px) {
