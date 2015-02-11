@@ -1,104 +1,63 @@
-<!DOCTYPE html>
-<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
-<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
-<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
-<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
-<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html  lang="en" dir="ltr"><!--<![endif]-->
+---
+layout: default
+title: Front page
+front: true
+page-class: page--front
+permalink: /
+---
 
-<head>
-<meta charset="utf-8" />
-<link rel="shortlink" href="http://crazyrohila.github.io" />
-<link rel="canonical" href="http://crazyrohila.github.io" />
-<meta name="keywords" content="front-end, responsive, drupal, css" />
-<meta name="description" content="Some Things about Front-end, CSS(3), Responsive designing, Drupal, Performance, and other random stuff." />
-<meta name="abstract" content="Front-end and Drupal related stuff is here." />
-<meta name="news_keywords" content="front-end, css(3), drupal, performance" />
-<title>CSS, Drupal, Performance and other random stuff | Sanjay Rohila</title>
-
-<meta name="MobileOptimized" content="width">
-<meta name="HandheldFriendly" content="true">
-<meta name="viewport" content="width=device-width">
-<meta http-equiv="cleartype" content="on">
-<link rel="author" href="https://plus.google.com/110811569558191168059/posts">
-
-<link rel="stylesheet" href="css/style.css">
-
-<script src="js/prefixfree.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script>window.jQuery || document.write("<script src='js/jquery.min.js'>\x3C/script>")</script>
-<script src="js/custom.js"></script>
-
-</head>
-
-<body>
-
-  <div class="page">
-    <div class="logo">
-      <a href="#" class="logo__link" title="sanjay rohila">
-        <span class="logo__text">$₹</span>
-      </a>
-    </div>
-    <nav class="navigation navigation--main">
-      <ul class="menu">
-        <li class="menu__item home">
-          <a href="/" class="menu__links">Home</a>
-        </li>
-        <li class="menu__item words">
-          <a href="/blog" class="menu__links" title="blog">Blog</a>
-        </li>
-        <li class="menu__item lab">
-          <a href="/work" class="menu__links" title="projects">projects</a>
-        </li>
-        <li class="menu__item me">
-          <a href="http://about.me/crazyrohila" class="menu__links" title="about me">me?</a>
-        </li>
-      </ul>
-    </nav>
-    <article class="info">
-      <h3>Hi, I am sanjay.</h3>
-      <p>
-        I am front-end and drupal developer. If you have something to talk about, drop <a class="mailme" href="mailto:sanjay6191@gmail.com?subject=Hi Sanjay!" title="sanjay6191@gmail.com">me</a> a message.
-      </p>
+<section class="section section--intro">
+  <div class="container container--full">
+    <article class="intro">
+      <h1 class="intro--title">Hi, I am <span>Sanjay.</span></h1>
+      <h3 class="intro--details">I'm a front-end & drupal developer working at <a href="http://srijan.net">Srijan</a>.</h3>
     </article>
-    <nav class="navigation navigation--social">
-      <ul class="menu">
-        <li class="menu__item">
-          <a href="https://github.com/crazyrohila" class="menu__links github" title="crazyrohila"></a>
-        </li>
-        <li class="menu__item">
-          <a href="https://twitter.com/crazyrohila" class="menu__links twitter" title="crazyrohila"></a>
-        </li>
-        <li class="menu__item">
-          <a href="http://in.linkedin.com/in/crazyrohila" class="menu__links linkedin" title="crazyrohila"></a>
-        </li>
-        <li class="menu__item">
-          <a href="https://plus.google.com/+sanjayrohila" class="menu__links google" title="crazyrohila"></a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__links more" title="click me"></a>
-          <ul class="menu menu--social menu--child">
-            <li class="menu__item menu--child__item">
-              <a href="http://codepen.io/crazyrohila" class="menu__links codepen" title="crazyrohila">codepen</a>
-            </li>
-            <li class="menu__item menu--child__item">
-              <a href="http://jsfiddle.net/user/crazyrohila/" class="menu__links jsfiddle" title="crazyrohila">jsfiddle</a>
-            </li>
-            <li class="menu__item menu--child__item">
-              <a href="https://drupal.org/user/1274328" class="menu__links drupal" title="crazyrohila">drupal</a>
-            </li>
-            <li class="menu__item menu--child__item">
-              <a href="http://udhar-ka-camera.tumblr.com/" class="menu__links tumblr" title="Udhar ka camera">tumblr</a>
-            </li>
-            <li class="menu__item menu--child__item">
-              <a href="http://www.flickr.com/photos/crazyrohila/" class="menu__links flicker" title="crazyrohila">flicker</a>
-            </li>
-            <li class="menu__item menu--child__item">
-              <a href="http://lmgtfy.com/?q=crazyrohila" class="menu__links even-more" title="google me">even-more</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
   </div>
-</body>
-</html>
+</section>
+<section class="section section--tools">
+  <div class="container">
+    <h3 class="section__header">What I Do?</h3>
+    <ul class="nl tools--main">
+      <li class="section__list-item" data-tooltip="HTML5"><img src="assets/logo-html.png" alt="HTML5"></li>
+      <li class="section__list-item" data-tooltip="Sass"><img src="assets/logo-sass.png" alt="Sass"></li>
+      <li class="section__list-item" data-tooltip="Drupal"><img src="assets/logo-drupal.png" alt="Drupal"></li>
+    </ul>
+    <ul class="nl tools--others">
+      <li class="section__list-item" data-tooltip="Angularjs"><img src="assets/logo-angular.png" alt="Angular"></li>
+      <li class="section__list-item" data-tooltip="Mongo DB"><img src="assets/logo-mongodb.png" alt="Mongo DB"></li>
+      <li class="section__list-item" data-tooltip="Socket.iojs"><img src="assets/logo-socketio.svg" alt="Socket.io"></li>
+      <li class="section__list-item" data-tooltip="jQuery"><img src="assets/logo-jquery.png" alt="jQuery"></li>
+      <li class="section__list-item" data-tooltip="@TODO"><img src="assets/logo-todo.png" alt="@TODO"></li>
+      <li class="section__list-item" data-tooltip="RWD"><img src="assets/logo-rwd.png" alt="Responsive Web Design"></li>
+    </ul>
+  </div>
+</section>
+<!-- <section class="section section--services">
+  <div class="container">
+  </div>
+</section> -->
+<section class="section section--fancy section--code">
+  <div class="container">
+    <h3 class="section__header">Code Snippet</h3>
+    <ul class="nl">
+      <li class="section__list-item"><a class="code-list-link" href="http://codepen.io/crazyrohila">Codepen</a></li>
+      <li class="section__list-item"><a class="code-list-link" href="https://www.drupal.org/u/crazyrohila">Drupal</a></li>
+      <li class="section__list-item"><a class="code-list-link" href="https://github.com/crazyrohila">Github</a></li>
+      <li class="section__list-item"><a class="code-list-link" href="http://jsfiddle.net/user/crazyrohila">Jsfiddle</a></li>
+    </ul>
+  </div>
+</section>
+<section class="section section--light section--blog-n-social">
+  <div class="container">
+    <div class="section--blog section--half">
+      <h3 class="section__header"><a href="/articles/">Articles</a></h3>
+      {% include articles-list.html %}
+    </div>
+    <div class="section--social section--half">
+      <h3 class="section__header">Reach me at</h3>
+      {% include footer.html %}
+    </div>
+  </div>
+</section>
+
+

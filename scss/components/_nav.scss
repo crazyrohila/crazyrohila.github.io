@@ -1,180 +1,27 @@
-/* Navigation menu */
+/**
+ * @file Navigations.
+ */
 
 .menu {
-  position: relative;
-  display: block;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  .menu__item {
-    @extend .icon;
-    padding: 5px 10px;
-    text-align: left;
-  }
-  .menu__links {
-    padding: 1px 0;
-    color: $base-color;
-    text-decoration: none;
-    cursor: pointer;
-  }
+  @extend .nl;
 }
 
-// Main navigation.
-.navigation--main {
-  margin-top: 10px;
-  text-align: center;
-  .menu {
-    top: -50px;
-    z-index: -999;
-    display: inline-block;
-    opacity: 0;
-    transition: .3s;
-    &.is_exp {
-      top: 0;
-      z-index: 9;
-      background: $white;
-      opacity: 1;
-    }
-  }
-  .menu__item {
-    display: list-item;
-    &:hover, &:focus {
-      background: $base-color;
-      .menu__links {
-        color: $white;
-      }
-    }
-    &.home {
-      @extend .icon-home;
-    }
-    &.words {
-      @extend .icon-pencil;
-    }
-    &.work {
-      @extend .icon-suitcase;
-    }
-    &.lab {
-      @extend .icon-beaker;
-    }
-    &.me {
-      @extend .icon-user;
-    }
-  }
-  .menu__links {
-    margin-left: -5px;
-    transition: .2s;
-    &:hover, &:focus {
-      background: $base-color;
-      color: $white;
-    }
-  }
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-
-// Social navigation.
-.navigation--social {
-  position: absolute;
-  bottom: 25%;
-  width: 100%;
-  & > .menu {
-    .menu__item:not(.menu--child__item) {
-      width: 22px;
-      height: 22px;
-    }
-  }
-  .menu__item {
-    position: relative;
-    display: inline-block;
-    font-size: 1.5em;
-  }
-  .menu__links {
-    &:hover, &:focus {
-      color: $black;
-    }
-    &.github {
-      @extend .icon-github;
-    }
-    &.twitter {
-      @extend .icon-twitter;
-    }
-    &.linkedin {
-      @extend .icon-linkedin;
-    }
-    &.google {
-      @extend .icon-googleplus;
-    }
-    &.more {
-      @extend .icon-th;
-      &.active {
-        @extend .icon-arrow-right;
-      }
-    }
-  }
-  .menu--child {
-    position: absolute;
-    bottom: 0;
-    left: -100%;
-    z-index: -999;
-    width: 400px;
-    font-size: .3em;
-    opacity: 0;
-    transition: .4s;
-    &.is_exp {
-      left: 105%;
-      z-index: 1;
-      opacity: 1;
-    }
-  }
-  .is_exp {
-    .menu--child__item {
-      padding: 3px;
-      &:hover, &:focus {
-        background: $base-color;
-        .menu__links {
-          color: $white;
-        }
-      }
-    }
-  }
-  // Hey Here.
-  &.hey-here {
-    // &:before {
-    //   content: "Hey Here!";
-    //   position: absolute;
-    //   top: -100%;
-    //   left: 0;
-    // }
-  }
+.menu--item {
+  display: inline-block;
+  display: flex;
+  padding: .5rem 1rem;
 }
 
-@media (min-width: 1100px) {
-  .navigation--social {
-    text-align: center;
-  }
-}
-
-@media (max-width: 660px) {
-  .navigation--social {
-    position: static;
-    .menu__links {
-      &.more {
-        &.active {
-          &:before {
-            content: "\e61f";
-          }
-        }
-      }
-    }
-    .menu--child {
-      top: -100%;
-      bottom: auto;
-      left: 0;
-      width: auto;
-      &.is_exp {
-        top: 105%;
-        bottom: auto;
-        left: 0;
-      }
-    }
+.menu--link {
+  color: $menu-link-color;
+  text-decoration: none;
+  &:hover, &:focus, &:active, &.active {
+    border-bottom: 5px solid $menu-link-color;
   }
 }

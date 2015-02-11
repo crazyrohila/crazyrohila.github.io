@@ -1,0 +1,19 @@
+---
+layout: default
+permalink: /articles/:title
+---
+
+<div class="container">
+  <h1 class="page__title">{{ page.title }}</h1>
+  <article class="article">
+    <p class="meta article__date">{{ page.date | date_to_string }}</p>
+
+    <div class="article__body">
+      {{ content }}
+    </div>
+  </article>
+  <hr></hr>
+  <div class="social-links-wrapper">
+    {% include footer.html %}
+  </div>
+</div>

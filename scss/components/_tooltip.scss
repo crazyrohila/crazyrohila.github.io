@@ -1,0 +1,57 @@
+/**
+ * Tooltips
+ */
+
+%vertical-center {
+  top: 50%;
+  @include translateY(-50%);
+}
+
+%hor-center {
+  left: 50%;
+  @include translateX(-50%);
+}
+
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  &:before, &:after {
+    @include opacity(0);
+    visibility: hidden;
+    pointer-events: none;
+
+    position: absolute;
+    @extend %hor-center;
+    z-index: 11;
+  }
+  &:hover, &:focus {
+    &:before, &:after {
+      @include opacity(1);
+      visibility: visible;
+    }
+  }
+}
+
+[data-tooltip]:before {
+  content: attr(data-tooltip);
+
+  @include border-radius(5px);
+  @include adjust-font-size-to(1rem);
+  top: 95%;
+  padding: .2rem .5rem;
+  background-color: $black;
+  color: $white;
+  text-align: center;
+}
+
+[data-tooltip]:after {
+  content: " ";
+
+  top: 90%;
+  width: 0;
+  border-bottom: 10px solid $black;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  font-size: 0;
+  line-height: 0;
+}

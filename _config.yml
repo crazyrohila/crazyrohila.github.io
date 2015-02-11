@@ -1,0 +1,10 @@
+name: Sanjay Rohila
+markdown: redcarpet
+highlighter: true
+timezone: Asia/Kolkata
+baseurl: ""
+url: "http://crazyrohila.github.io"
+permalink: :title
+include: ['.htaccess']
+keep_files: ['.git']
+markdown_ext: markdown, md

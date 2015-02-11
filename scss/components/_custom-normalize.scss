@@ -1,0 +1,60 @@
+/**
+ * Specific element normalizing
+ */
+
+// Normalize
+*, *:before, *:after {
+  @include box-sizing(border-box);
+}
+
+.nl {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul, ol {
+  margin-left: 1.35em;
+}
+
+hr {
+  border: 0;
+  outline: 0;
+  background: #ddd;
+  background: linear-gradient(to right,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
+  height: 1px;
+  margin: 3em 0 2rem;
+}
+
+code {
+  padding: 0 .2rem;
+  // color: darken($base-color, 20%);
+  border: 1px solid $gray;
+  background-color: $light-gray;
+}
+
+pre {
+  overflow-x: auto;
+  padding: 1.25rem;
+  border: 1px solid $gray;
+  border-left-width: 5px;
+  margin: 0 0 1.5rem;
+  background-color: $light-gray;
+  white-space: pre;
+}
+
+pre code {
+  border: none;
+  color: $black;
+}
+
+/* terminal */
+// pre.terminal {
+//   border: 1px solid $black;
+//   background-color: $dark-gray;
+//   color: $white;
+// }
+
+// pre.terminal code {
+//   background-color: $dark-gray;
+// }

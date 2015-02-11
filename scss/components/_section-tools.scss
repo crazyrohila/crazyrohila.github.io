@@ -1,0 +1,21 @@
+/**
+ * Tools section
+ */
+
+@media (min-width: 42.5em) {
+  [class*="tools--"] {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media (max-width: 30em) {
+  [data-tooltip] {
+    float: left;
+    padding: .5rem .8rem;
+    width: 33%;
+    &:nth-child(3n+1) {
+      clear: left;
+    }
+  }
+}

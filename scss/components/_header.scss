@@ -1,0 +1,68 @@
+/**
+ * @file Header stuff.
+ */
+
+.header {
+  min-height: 6rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.logo {
+  @include border-radius(50%);
+  float: left;
+  width: 4rem;
+  height: 4rem;
+  background: $logo-color;
+  border: 3px solid $logo-color;
+  color: $white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 4rem;
+  @media (min-width: 64em) {
+    @include transition('transform', 500ms);
+    margin-top: 1rem;
+    &:hover, &:focus {
+      @include rotate(720deg);
+      background: $white;
+      color: $logo-color;
+    }
+  }
+}
+
+.nav--main {
+  float: right;
+  @media (min-width: 64em) {
+    margin-top: 1.5rem;
+  }
+}
+
+.header__branding {
+  display: none;
+  @media (min-width: 42.5em) {
+    display: block;
+    float: left;
+    width: 30%;
+    margin-left: 20%;
+  }
+}
+
+.certs {
+  a {
+    display: block;
+    text-decoration: none;
+    line-height: 1;
+  }
+  span {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.page__title {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: $base-color;
+}

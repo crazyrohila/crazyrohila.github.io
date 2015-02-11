@@ -2,25 +2,89 @@
 // Variables
 // =============================================================================
 
-// Fonts.
-$base-font-size:   16px; // The font size set on the root html element.
-$base-line-height: 24px; // This line-height determines the basic unit of vertical rhythm.
+// These 3 variables are copies of ones used in Compass' Vertical Rhythm module.
 
-$h1-font-size: 2    * $base-font-size;
-$h2-font-size: 1.5  * $base-font-size;
-$h3-font-size: 1.17 * $base-font-size;
-$h4-font-size: 1    * $base-font-size;
-$h5-font-size: 0.83 * $base-font-size;
-$h6-font-size: 0.67 * $base-font-size;
+  // The font size set on the root html element.
+  $base-font-size: 16px !default;
+
+  // The base line height determines the basic unit of vertical rhythm.
+  $base-line-height: 24px !default;
+
+  // The length unit in which to output vertical rhythm values.
+  // Supported values: px, em, rem.
+  $rhythm-unit: 'rem' !default;
+
+  // Note: This project also makes use of variables from Compass' support
+  // module. Documentation for this can be found on the wiki at:
+  // https://github.com/JohnAlbin/normalize-scss/wiki
+
+
+// Set this to true to force CSS output to exactly match normalize.css.
+$strict-normalize: true !default;
+
+// The default font family.
+$base-font-family: roboto, sans-serif !default;
+
+// The font sizes for h1-h6.
+$h1-font-size: 2    * $base-font-size !default;
+$h2-font-size: 1.5  * $base-font-size !default;
+$h3-font-size: 1.17 * $base-font-size !default;
+$h4-font-size: 1    * $base-font-size !default;
+$h5-font-size: 0.83 * $base-font-size !default;
+$h6-font-size: 0.67 * $base-font-size !default;
+
+// The amount lists and blockquotes are indented.
+$indent-amount: 40px !default;
 
 // Colors.
 $black: #000;
 $white: #fff;
 $indianred: indianred;
 $fav: #008080;
+$sky-blue: #60B5EA;
 $gray: #ccc;
+$light-gray: #eee;
+$dark-gray: #444;
+$dark-blue: darkslateblue;
 
-$base-color: $indianred;
+$social-colors: (
+  'twitter': #00a0d1,
+  'facebook': #3b5998,
+  'linkedin': #007bb6,
+  'google': #dd4b39,
+  'stack-overflow': #F27A20,
+  'drupal': #0077C0,
+  'codepen': #000000,
+  'github': #171515,
+  'tumblr': #34526f,
+);
+
+
+// $twitter: #00a0d1;
+// $facebook: #3b5998;
+// $tumblr: #34526f;
+// $google: #dd4b39;
+// $linkedin: #007bb6;
+// $drupal: #0077C0;
+// $codepen: #000;
+// $github: #171515;
+
+
+$base-color: $sky-blue;
+
+$menu-link-color: $base-color;
+
+$section-light-bg: $light-gray;
+$section-dark-bg: $dark-gray;
+$section-fancy: $base-color;
+$section-heading-color: $base-color;
+
+$intro-color: $white;
+
+$code-box-fill: $white;
+$code-box-fill-color: $base-color;
+
+$logo-color: $base-color;
 
 // =============================================================================
 // Partials to be shared with all .scss files.

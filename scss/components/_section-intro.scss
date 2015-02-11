@@ -1,0 +1,38 @@
+/**
+ * Intro section
+ */
+.section--intro {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  align-items: center;
+  max-height: 500px;
+  background-image: image-url("intro.jpg");
+  background-size: cover;
+  padding-top: 10%;
+  padding-bottom: 20%;
+  @media (min-width: 64em) {
+    background-image: image-url("intro-large.jpg");
+    background-attachment: fixed;
+  }
+}
+
+.intro {
+  max-width: 580px;
+  max-width: 36.25rem;
+  margin: 0 auto;
+  text-align: center;
+  color: $intro-color;
+  flex: 1;
+  a {
+    color: $base-color;
+  }
+  @media (max-width: 30em) {
+    padding: 0 1rem;
+  }
+}
+
+.intro--details {
+  font-weight: normal;
+}

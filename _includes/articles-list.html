@@ -1,0 +1,20 @@
+<ul class="nl articles">
+  {% for article in site.categories.featured limit:3 %}
+    <li class="article__list">
+      {% if article.external-url == "" or article.external-url == nil %}
+        <a class="article__link" href="{{ article.url }}">
+      {% else %}
+        <a class="article__link" href="{{ article.external-url }}" target="_blank">
+      {% endif %}
+          {{ article.title }}
+          <span class="article__date meta">
+            {{ article.date | date_to_string }}
+          </span>
+          <i class="external icon-mail-forward meta"></i>
+        </a>
+    </li>
+  {% endfor %}
+  <li class="pager">
+    <a href="/articles/" class="pager__link">All Articles</a>
+  </li>
+</ul>
