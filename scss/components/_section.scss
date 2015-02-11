@@ -3,15 +3,15 @@
  */
 
 .section--light {
-  background: $section-light-bg;
+  background-color: $section-light-bg;
 }
 
 .section--dark {
-  background: $section-dark-bg;
+  background-color: $section-dark-bg;
 }
 
 .section--fancy {
-  background: $section-fancy;
+  background-color: $section-fancy;
   .section__header {
     color: $white;
   }
