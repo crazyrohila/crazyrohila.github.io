@@ -21,7 +21,7 @@
 .menu--link {
   color: $menu-link-color;
   text-decoration: none;
-  &:hover, &:focus, &:active, &.active {
+  &:hover, &:focus, &:active, &.is-active {
     border-bottom: 5px solid $menu-link-color;
   }
 }
