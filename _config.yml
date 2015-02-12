@@ -1,6 +1,6 @@
 name: Sanjay Rohila
 markdown: redcarpet
-highlighter: true
+pygments: true
 timezone: Asia/Kolkata
 baseurl: ""
 url: "http://crazyrohila.github.io"
