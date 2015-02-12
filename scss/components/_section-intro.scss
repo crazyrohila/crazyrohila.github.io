@@ -1,5 +1,5 @@
 /**
- * Intro section
+ * @file Intro section
  */
 .section--intro {
   position: relative;
@@ -8,11 +8,17 @@
   -webkit-box-align: center;
   align-items: center;
   max-height: 500px;
-  background-image: image-url("intro.jpg");
+  background-image: image-url("intro-smaller.jpg");
   background-size: cover;
   padding-top: 10%;
   padding-bottom: 20%;
-  @media (min-width: 64em) {
+  @include respond-to('small') {
+    background-image: image-url("intro-small.jpg");
+  }
+  @include respond-to('medium') {
+    background-image: image-url("intro.jpg");
+  }
+  @include respond-to('large') {
     background-image: image-url("intro-large.jpg");
     background-attachment: fixed;
   }
@@ -22,14 +28,12 @@
   max-width: 580px;
   max-width: 36.25rem;
   margin: 0 auto;
+  padding: 0 1rem;
   text-align: center;
   color: $intro-color;
   flex: 1;
   a {
     color: $base-color;
-  }
-  @media (max-width: 30em) {
-    padding: 0 1rem;
   }
 }
 

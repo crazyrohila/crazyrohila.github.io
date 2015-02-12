@@ -1,10 +1,10 @@
 <header class="header">
   <div class="container">
-    <a class="logo" href="{{ site.baseurl }}/">$₹</a>
+    <a title="Home" class="logo" href="{{ site.baseurl }}/">$₹</a>
     {% if page.front == true %}
       <div class="header__branding">
         <div class="certs">
-          <a href="http://training.acquia.com/registry?field_first_name_value=Sanjay&field_last_name_value=Rohila&city=&country=All&field_exam_tid=All" target="_blank">
+          <a title="Acquia Certified Drupal Developer" href="http://training.acquia.com/registry?field_first_name_value=Sanjay&field_last_name_value=Rohila&city=&country=All&field_exam_tid=All" target="_blank">
             <span><img src="/assets/cert-drupal.png"></span>
             <span><img src="/assets/cert-frontend.png"></span>
           </a>
@@ -13,12 +13,12 @@
     {% endif %}
     <nav class="nav nav--main">
       <ul class="menu">
-        <li class="menu--item"><a href="http://about.me/crazyrohila" class="menu--link" target="_blank">About</a></li>
-        <li class="menu--item"><a href="http://crazyrohila.github.io/work" class="menu--link">Code</a></li>
+        <li class="menu--item"><a title="About Me" href="http://about.me/crazyrohila" class="menu--link" target="_blank">About</a></li>
+        <li class="menu--item"><a title="Machine Readable Lines" href="http://crazyrohila.github.io/work" class="menu--link">Code</a></li>
         {% if page.front == true %}
-          <li class="menu--item"><a href="/articles/" class="menu--link">Blog</a></li>
+          <li class="menu--item"><a title="Articles" href="/articles/" class="menu--link">Blog</a></li>
         {% else %}
-          <li class="menu--item"><a href="/articles/" class="menu--link is-active">Blog</a></li>
+          <li class="menu--item"><a title="Articles I wrote" href="/articles/" class="menu--link is-active">Blog</a></li>
         {% endif %}
       </ul>
     </nav>

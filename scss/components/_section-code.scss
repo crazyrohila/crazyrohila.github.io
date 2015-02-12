@@ -1,12 +1,11 @@
 /**
- * Section code
+ * @file Section code
  */
 .section--code {
-  // padding: 2rem 0;
   a {
-    @include adjust-font-size-to(2rem);
+    @include adjust-font-size-to(1.5rem);
     display: block;
-    padding: 1rem 2rem;
+    padding: .5rem .8rem;
     color: $code-box-fill;
     text-decoration: none;
     border: 1px solid $code-box-fill;
@@ -14,19 +13,23 @@
       background: $code-box-fill;
       color: $code-box-fill-color;
     }
+    @include respond-to('small') {
+      @include adjust-font-size-to(2rem);
+      padding: 1rem 2rem;
+    }
   }
   .section__list-item {
-    @media (max-width: 40em) {
-      float: left;
-      width: 50%;
-      text-align: center;
+    padding-left: 0;
+    float: left;
+    width: 50%;
+    text-align: center;
+    @include respond-to('medium') {
+      float: none;
+      width: auto;
+      text-align: auto;
     }
-    @media (max-width: 30em) {
-      padding-left: 0;
-      a {
-        @include adjust-font-size-to(1.5rem);
-        padding: .5rem .8rem;
-      }
+    @include respond-to('small') {
+      padding-left: 2rem;
     }
   }
 }

@@ -13,6 +13,16 @@
   list-style: none;
 }
 
+.visualy-hidden {
+  position: absolute!important;
+  overflow: hidden!important;
+  width: 1px!important;
+  height: 1px!important;
+  padding: 0!important;
+  border: 0!important;
+  clip: rect(1px,1px,1px,1px)!important;
+}
+
 ul, ol {
   margin-left: 1.35em;
 }
@@ -23,7 +33,7 @@ hr {
   background: #ddd;
   background: linear-gradient(to right,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
   height: 1px;
-  margin: 3em 0 2rem;
+  margin: 2rem 0;
 }
 
 code {

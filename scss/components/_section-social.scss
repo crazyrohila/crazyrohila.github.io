@@ -1,5 +1,5 @@
 /**
- * Social section on front page
+ * @file Social section on front page
  */
 
 $social-sites: (
@@ -18,7 +18,6 @@ $social-sites: (
 }
 
 .social-link {
-  // @include adjust-font-size-to(2rem);
   display: block;
   text-decoration: none;
   text-align: center;
@@ -34,13 +33,12 @@ $social-sites: (
 
 .section--social {
   .social-links {
-    padding: 0 2rem;
-    @media (max-width: 30em) {
-      padding: 0;
+    padding: 0;
+    @include respond-to('small') {
+      padding: 0 2rem;
     }
   }
   .social-link {
-    // @include adjust-font-size-to(2rem);
     width: 3.5rem;
     height: 3.5rem;
     font-size: 2rem;

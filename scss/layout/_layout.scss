@@ -7,7 +7,7 @@
   @include clearfix;
   width: 100%;
   padding: 1rem 0 3rem;
-  @media (min-width: 60em) {
+  @include respond-to('large') {
     &--half {
       float: left;
       width: 50%;

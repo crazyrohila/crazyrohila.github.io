@@ -2,6 +2,7 @@
 layout: default
 title: Articles
 permalink: /articles/
+page-class: page--articles
 ---
 
 <div class="container">
@@ -10,15 +11,16 @@ permalink: /articles/
     {% for article in site.posts %}
       <li class="article__list">
         {% if article.external-url == "" or article.external-url == nil %}
-          <a class="article__link" href="{{ article.url }}">
+          <a title="{{ article.title }}" class="article__link" href="{{ article.url }}">
         {% else %}
-          <a class="article__link" href="{{ article.external-url }}" target="_blank">
+          <a title="{{ article.title }}" class="article__link" href="{{ article.external-url }}" target="_blank">
         {% endif %}
             {{ article.title }}
             <span class="article__date meta">
               {{ article.date | date_to_string }}
             </span>
             <i class="external icon-mail-forward meta"></i>
+            <span class="visualy-hidden">External</span>
           </a>
       </li>
     {% endfor %}

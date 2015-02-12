@@ -2,14 +2,14 @@
  * Tools section
  */
 
-@media (min-width: 42.5em) {
+@include respond-to('medium') {
   [class*="tools--"] {
     float: left;
     width: 50%;
   }
 }
 
-@media (max-width: 30em) {
+@include respond-to('small-only') {
   [data-tooltip] {
     float: left;
     padding: .5rem .8rem;

@@ -1,3 +1,13 @@
+/**
+ * Articles list page
+ */
+
+.page--articles {
+  hr {
+    margin: 3rem 0 2rem;
+  }
+}
+
 .articles {
   list-style: none;
   margin: 0 0 2em 0;
@@ -7,17 +17,19 @@
   // }
   .meta {
     float: right;
-    @media (max-width: 30em) {
-      display: none;
+
+    display: none;
+    @include respond-to('small') {
+      display: inline;
     }
   }
 }
 
 .section--blog {
   .articles {
-    padding: 0 2rem;
-    @media (max-width: 30em) {
-      padding: 0;
+    padding: 0;
+    @include respond-to('small') {
+      padding: 0 2rem;
     }
   }
 }
@@ -46,7 +58,7 @@
   color: darken($gray, 20%);
 }
 
-.external {
+.external.external {
   display: none;
 
   color: darken($gray, 20%);

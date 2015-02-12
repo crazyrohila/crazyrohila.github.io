@@ -1,5 +1,6 @@
 ---
 layout: default
+page-class: page--article
 permalink: /articles/:title
 ---
 
@@ -12,8 +13,12 @@ permalink: /articles/:title
       {{ content }}
     </div>
   </article>
+  <div class="article-actions">
+    <a title="Tweet Article" href="https://twitter.com/share" class="twitter-share-button article-tweet" data-via="crazyrohila" data-size="small" data-count="none">Tweet</a>
+  </div>
   <hr></hr>
   <div class="social-links-wrapper">
+    <a title="Follow @crazyrohila on Twitter" href="https://twitter.com/crazyrohila" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @crazyrohila</a>
     {% include footer.html %}
   </div>
 </div>

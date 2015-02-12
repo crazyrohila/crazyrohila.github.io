@@ -19,17 +19,17 @@
 
 .section__header {
   @include adjust-font-size-to(2rem);
-  padding: 0 2rem;
+  padding: 0;
   margin: 1rem 0 .5rem;
   color: $section-heading-color;
   font-weight: normal;
-  @media (max-width: 30em) {
-    padding: 0;
+  @include respond-to('small') {
+    padding: 0 2rem;
   }
   a {
     color: $section-heading-color;
     text-decoration: none;
-    @media (min-width: 64em) {
+    @include respond-to('large') {
       &:hover, &:focus {
         border-bottom: 2px solid;
       }

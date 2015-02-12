@@ -20,7 +20,7 @@
   text-align: center;
   font-size: 1.5rem;
   line-height: 4rem;
-  @media (min-width: 64em) {
+  @include respond-to('large') {
     @include transition('transform', 500ms);
     margin-top: 1rem;
     &:hover, &:focus {
@@ -33,14 +33,14 @@
 
 .nav--main {
   float: right;
-  @media (min-width: 64em) {
+  @include respond-to('large') {
     margin-top: 1.5rem;
   }
 }
 
 .header__branding {
   display: none;
-  @media (min-width: 42.5em) {
+  @include respond-to('medium') {
     display: block;
     float: left;
     width: 30%;
