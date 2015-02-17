@@ -6,19 +6,17 @@ tags: drupal, ctools, theming
 categories: featured
 ---
 
-**Problem Statement:**
+### Problem Statement: How to modify html of ctools modal box ?
 
-How to modify html of ctools modal box ?
+### Solution:
 
-**Solution:**
-
-__Note: Assuming you already know how to use default ctools modals. If not then, I have [created a module](https://github.com/crazyrohila/ctools_custom_modal "created a module") to show how to use ctools modal and how to modify html of modalbox.__
+_Note: I'm assuming that you already know how to use default ctools modals. If not then, I have [created a module](https://github.com/crazyrohila/ctools_custom_modal "created a module") to show how to use ctools modal and how to modify html of modalbox._
 
 We have to follow simple 4 steps.
 
 * Define a new class instance in module, which will trigger our new modalbox.
 
-{% highlight php %}
+```php
 drupal_add_js(array(
   'custom-popup-class' => array(
     'modalSize' => array(
@@ -32,11 +30,11 @@ drupal_add_js(array(
     ),
   ),
 ), 'setting');
-{% endhighlight %}
+```
 
 * Assign new `modalTheme` function.
 
-{% highlight php %}
+```php
 drupal_add_js(array(
   'custom-popup-class' => array(
     'modalSize' => array(
@@ -53,11 +51,11 @@ drupal_add_js(array(
     'closeImage' => '',
   ),
 ), 'setting');
-{% endhighlight %}
+```
 
 * Now create same function (from step-2 eg. `ctools_custom_modal_html`) in `Drupal.theme` in js file and render your modalbox.
 
-{% highlight js %}
+```js
 Drupal.theme.prototype.ctools_custom_modal_html = function () {
   var html = '';
   html += '<div id="ctools-modal" class="ctools-modal-custom">';
@@ -71,7 +69,7 @@ Drupal.theme.prototype.ctools_custom_modal_html = function () {
   html += '</div>';
   return html;
 }
-{% endhighlight %}
+```
 
 * Clear Cache.
 

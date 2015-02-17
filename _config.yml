@@ -7,4 +7,4 @@ url: "http://crazyrohila.github.io"
 permalink: /articles/:title
 include: ['.htaccess']
 keep_files: ['.git']
-markdown_ext: markdown, md
+markdown_ext: "markdown,mkdown,mkdn,mkd,md,txt"
