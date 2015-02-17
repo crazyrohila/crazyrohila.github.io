@@ -12,13 +12,13 @@
   justify-content: space-around;
 }
 
-.menu--item {
+.menu__item {
   display: inline-block;
   display: flex;
   padding: .5rem 1rem;
 }
 
-.menu--link {
+.menu__link {
   color: $menu-link-color;
   text-decoration: none;
   &:hover, &:focus, &:active, &.is-active {
