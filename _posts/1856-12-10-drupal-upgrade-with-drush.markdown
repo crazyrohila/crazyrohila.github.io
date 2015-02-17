@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "Drupal Upgrade with drush"
-date: 2006-12-10 21:18:56
+date: 2012-12-10 21:18:56
 tags: drupal, drush, drush-upgrade, drupal-upgrade
-
 ---
 
 Currently I was working on a project, in which I have to upgrade a drupal 6 site to drupal 7. So I have start with [http://drupal.org/project/drush_sup][drush_sup] module and nice [article][drupal6-to-drupal7]  by moshe weitzman. drush\_sup is not a drupal module, Its a drush script. You can install it by using following command. `drush dl drush\_sup`. Before start upgrade process please update your drupal6 to latest version and disable all custom modules and theme. To update any module, you can use drush. example:- If you want to update only core drupal, use `drush up drupal` If you want to update views, use `drush up views`. When you are on latest version of drupal6, then start upgrade process. First we have to create aliases for drupal site. You can find documentation [Drush aliases][drush_aliases]  OR you can just create a file aliases.drushrc.php in /etc/drush/ (or your installed drush directory). Now open this file and create alias for your drupal site.

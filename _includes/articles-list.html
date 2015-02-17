@@ -7,9 +7,9 @@
         <a title="{{ article.title }}" class="article__link" href="{{ article.external-url }}" target="_blank">
       {% endif %}
           {{ article.title }}
-          <!--<span class="article__date meta">
+          <span class="article__date meta">
             {{ article.date | date_to_string }}
-          </span>-->
+          </span>
           <i class="external icon-mail-forward meta"></i>
           <span class="visualy-hidden">External</span>
         </a>

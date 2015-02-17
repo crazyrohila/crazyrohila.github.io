@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "My coding style guide"
-date: 2005-12-11 11:12:13
+date: 2013-10-11
 tags: code style, style guide
-categories: featured
 ---
 
 **I should have a common style guide.**

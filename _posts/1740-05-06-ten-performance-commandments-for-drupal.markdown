@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "Ten Performance Commandments for Drupal"
-date: 2007-05-06 21:18:56
+date: 2013-05-06 21:18:56
 tags: drupal, performance
-
 ---
 
 Drupal is slow. All of us know. But as they say humans have a tendency to aim for better and when we are better, aim for excellence. So out of human tendency while searching for improving the scope of performance, I came across few points which needs to be taken care of while developing a new Drupal site.
