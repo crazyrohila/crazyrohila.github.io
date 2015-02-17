@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ten Performance Commandments for Drupal"
-date: 1740-05-06 21:18:56
+date: 2007-05-06 21:18:56
 tags: drupal, performance
 
 ---

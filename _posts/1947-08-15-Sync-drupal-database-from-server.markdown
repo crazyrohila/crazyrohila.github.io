@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sync drupal database from server"
-date: 1947-08-15 12:01:00
+date: 1992-08-15 12:01:00
 tags: drupal, drush, ssh, dbsync
 
 ---

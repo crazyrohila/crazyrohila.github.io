@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Remove default front page message in drupal"
-date: 2003-03-09 10:11:10
+date: 2000-03-09 10:11:10
 tags: drupal, front-page, default message
 
 ---

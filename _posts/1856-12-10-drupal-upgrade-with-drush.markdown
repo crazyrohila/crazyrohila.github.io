@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Drupal Upgrade with drush"
-date: 1856-12-10 21:18:56
+date: 2006-12-10 21:18:56
 tags: drupal, drush, drush-upgrade, drupal-upgrade
 
 ---

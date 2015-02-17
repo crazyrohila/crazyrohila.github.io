@@ -3,7 +3,6 @@ layout: post
 title: "Thank You 2014"
 date: 2015-01-01 00:00:01
 tags: happy new year
-categories: featured
 ---
 
 In 2013 I mostly worked as front-end developer, so I was hoping same for 2014. I loved working on front-end stuff, so I decided to move on that direction. But I was assigned as Drupal-developer in projects last year. I improved a lot in back-end stuff, I have tried things I was afraid of. I have gained confidence as drupal/back-end developer.
