@@ -1,6 +1,6 @@
 name: Sanjay Rohila
 markdown: redcarpet
-pygments: true
+highlighter: rouge
 timezone: Asia/Kolkata
 baseurl: ""
 url: "http://crazyrohila.github.io"
@@ -8,3 +8,14 @@ permalink: /articles/:title
 include: ['.htaccess']
 keep_files: ['.git']
 markdown_ext: "markdown,mkdown,mkdn,mkd,md,txt"
+# Main Navigation links
+navigation:
+  - title: About me
+    url: /about/
+    text: About
+  - title: Demos
+    url: http://crazyrohila.github.io/work/
+    text: Code
+  - title: Articles
+    url: /articles/
+    text: Blog
