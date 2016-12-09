@@ -1,5 +1,5 @@
 name: Sanjay Rohila
-markdown: redcarpet
+markdown: kramdown
 highlighter: rouge
 timezone: Asia/Kolkata
 baseurl: ""
