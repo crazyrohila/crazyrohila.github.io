@@ -3,7 +3,6 @@ layout: post
 title: "Export (as png) multiple highchart graphs as zip"
 date: 2016-09-02
 tags: highchart, export-png, highchart-export-zip, highchart-export-png
-categories: featured
 ---
 
 I have a dashboard page with lot of highchart graphs. Highchart allows us to download chart as image. We wanted to download all of them at once in a zip file. So for that, we have used <a target="_blank" href="https://stuk.github.io/jszip" title="jsZip">jsZip library</a> to create zip file and put all the images in that. We can get the svg data of graph and use canvas to convert that in png data URI. Then we can put all the images in zip file and download them.

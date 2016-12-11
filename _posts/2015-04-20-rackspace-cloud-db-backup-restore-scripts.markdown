@@ -3,7 +3,6 @@ layout: post
 title: "Rackspace Cloud Database Automated Backups"
 date: 2015-04-20
 tags: rackspace, cloud services
-categories: featured
 ---
 
 Rackspace cloud database don't have facility to backup database automatically/periodically. They have this feature in development; progress can be seen at [Automated Backups for Cloud Databases](https://feedback.rackspace.com/forums/250746-cloud-hosting/suggestions/5976741-automated-backups-for-cloud-databases "Automated Backups for Cloud Databases").
